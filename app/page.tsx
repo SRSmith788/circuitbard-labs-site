@@ -29,14 +29,13 @@ const contactEmail = "circuitbardlabs@outlook.com"
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-slate-950 text-slate-100">     
-     <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-6 sm:px-6 sm:py-8">
+<main className="circuitbard-bg min-h-screen overflow-x-hidden text-slate-100">     <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-6 sm:px-6 sm:py-8">
         <nav className="flex items-center justify-between">
           <div className="text-lg font-bold tracking-tight">
             Circuitbard Labs
           </div>
 
-          <div className="hidden gap-6 text-sm text-slate-300 md:flex">
+          <div className="hidden gap-6 text-sm text-stone-300 md:flex">
             <a href="#services" className="hover:text-white">
               Services
             </a>
@@ -54,7 +53,7 @@ export default function Home() {
 
         <div className="grid flex-1 items-center gap-8 py-12 sm:py-16 md:grid-cols-[1.2fr_0.8fr] md:gap-12 md:py-20">
           <div>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300 sm:text-sm sm:tracking-[0.3em]">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-rose-400 sm:text-sm sm:tracking-[0.3em]">
               Websites • Apps • Digital Systems
             </p>
 
@@ -62,7 +61,7 @@ export default function Home() {
                  Practical digital tools for everyday chaos.
             </h1>
 
-            <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
+            <p className="mt-5 max-w-2xl text-base leading-7 text-stone-300 sm:text-lg sm:leading-8">
               Circuitbard Labs builds useful websites, homebrewed apps, and
               lightweight digital systems that keep the little things from
               piling up.
@@ -71,40 +70,40 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
               <a
                 href="#projects"
-                className="w-full rounded-full bg-cyan-300 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-cyan-200 sm:w-auto"
+                className="w-full rounded-full bg-rose-500 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-rose-400 sm:w-auto"
               >
                 View Projects
               </a>
 
               <a
                 href="#contact"
-                className="w-full rounded-full border border-slate-600 px-6 py-3 text-center font-bold text-white transition hover:border-cyan-300 hover:text-cyan-300 sm:w-auto"
+                className="w-full rounded-full border border-rose-950/70 px-6 py-3 text-center font-bold text-white transition hover:border-rose-400 hover:text-rose-400 sm:w-auto"
               >
                 Work With Me
               </a>
             </div>
           </div>
 
-<div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-5 shadow-2xl sm:p-6">            <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
+<div className="rounded-3xl border border-rose-950/70 bg-zinc-950/70/70 p-5 shadow-2xl sm:p-6">            <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
               Project 001
             </p>
             <h2 className="text-3xl font-black text-white sm:text-4xl">
               Circuitbard Labs Website
             </h2>
-            <p className="mt-4 leading-7 text-slate-300">
+            <p className="mt-4 leading-7 text-stone-300">
               The first official build: a home base for apps, services, client
               work, and the occasional bardic warning shot.
             </p>
-            <p className="mt-6 rounded-2xl bg-slate-950 p-4 text-sm text-slate-400">
+            <p className="mt-6 rounded-2xl bg-black/40 p-4 text-sm text-stone-400">
               Scope creep gets the lute.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="services" className="border-t border-slate-800 px-6 py-20">
+      <section id="services" className="border-t border-rose-950/70 px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
             What I Build
           </p>
           <h2 className="text-3xl font-black text-white sm:text-4xl">
@@ -115,12 +114,12 @@ export default function Home() {
             {services.map((service) => (
               <article
                 key={service.title}
-                className="rounded-3xl border border-slate-800 bg-slate-900 p-6"
+                className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6"
               >
                 <h3 className="text-xl font-bold text-white">
                   {service.title}
                 </h3>
-                <p className="mt-4 leading-7 text-slate-300">
+                <p className="mt-4 leading-7 text-stone-300">
                   {service.description}
                 </p>
               </article>
@@ -129,10 +128,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="border-t border-slate-800 px-6 py-20">
+      <section id="projects" className="border-t border-rose-950/70 px-6 py-20">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
               Featured Project
             </p>
             <h2 className="text-3xl font-black text-white sm:text-4xl">
@@ -141,7 +140,7 @@ export default function Home() {
           </div>
 
           <div>
-            <p className="leading-8 text-slate-300">
+            <p className="leading-8 text-stone-300">
               FollowUp Agent is a simple tracker for reminders, conversations,
               loose ends, and important next steps. It is built for people who
               need a practical way to remember what needs attention next.
@@ -149,7 +148,7 @@ export default function Home() {
 
             <a
               href="#contact"
-              className="mt-8 inline-block rounded-full border border-slate-600 px-6 py-3 font-bold text-white transition hover:border-cyan-300 hover:text-cyan-300"
+              className="mt-8 inline-block rounded-full border border-slate-600 px-6 py-3 font-bold text-white transition hover:border-rose-400 hover:text-rose-400"
             >
               Ask About This Project
             </a>
@@ -157,9 +156,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-slate-800 px-6 py-20">
+      <section className="border-t border-rose-950/70 px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
             Services
           </p>
           <h2 className="text-3xl font-black text-white sm:text-4xl">
@@ -170,7 +169,7 @@ export default function Home() {
             {offerings.map((offering) => (
               <div
                 key={offering}
-                className="rounded-2xl border border-slate-800 bg-slate-900 px-5 py-4 font-semibold text-slate-200"
+                className="rounded-2xl border border-rose-950/70 bg-zinc-950/70 px-5 py-4 font-semibold text-slate-200"
               >
                 {offering}
               </div>
@@ -179,15 +178,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="border-t border-slate-800 px-6 py-20">
+      <section id="about" className="border-t border-rose-950/70 px-6 py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
             About
           </p>
           <h2 className="text-3xl font-black text-white sm:text-4xl">
             Built by an independent maker with a practical streak.
           </h2>
-          <p className="mt-6 leading-8 text-slate-300">
+          <p className="mt-6 leading-8 text-stone-300">
             Circuitbard Labs is a small independent tech lab focused on building
             useful, lightweight digital tools. The goal is simple: make things
             that help people manage the little stuff before it becomes a
@@ -196,31 +195,31 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="border-t border-slate-800 px-6 py-20">
-        <div className="mx-auto max-w-3xl rounded-3xl border border-slate-800 bg-slate-900 p-8 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+      <section id="contact" className="border-t border-rose-950/70 px-6 py-20">
+        <div className="mx-auto max-w-3xl rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-8 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
             Contact
           </p>
           <h2 className="text-3xl font-black text-white sm:text-4xl">
             Need a site, app, or simple digital setup?
           </h2>
-          <p className="mt-6 leading-8 text-slate-300">
+          <p className="mt-6 leading-8 text-stone-300">
             Reach out and let’s talk through what you need. Lute currently
             reserved for scope creep.
           </p>
 
           <a
   href={`mailto:${contactEmail}`}
-  className="mt-8 inline-block rounded-full bg-cyan-300 px-6 py-3 font-bold text-slate-950 transition hover:bg-cyan-200"
+  className="mt-8 inline-block rounded-full bg-rose-500 px-6 py-3 font-bold text-slate-950 transition hover:bg-rose-400"
 >
   Email Circuitbard Labs
 </a>
 
-<p className="mt-4 text-sm text-slate-400">{contactEmail}</p>
+<p className="mt-4 text-sm text-stone-400">{contactEmail}</p>
         </div>
       </section>
 
-      <footer className="border-t border-slate-800 px-6 py-8 text-center text-sm text-slate-500">
+      <footer className="border-t border-rose-950/70 px-6 py-8 text-center text-sm text-slate-500">
         Built by Circuitbard Labs. No wizard bones required. Lute nearby just in
         case.
       </footer>

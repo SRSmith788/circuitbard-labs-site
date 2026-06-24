@@ -24,3 +24,42 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.circuitbard-bg {
+  background:
+    radial-gradient(circle at top left, rgba(244, 63, 94, 0.18), transparent 34rem),
+    radial-gradient(circle at top right, rgba(190, 18, 60, 0.12), transparent 30rem),
+    radial-gradient(circle at bottom center, rgba(245, 158, 11, 0.06), transparent 36rem),
+    linear-gradient(rgba(255, 244, 214, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 244, 214, 0.018) 1px, transparent 1px),
+    #050509;
+  background-size:
+    auto,
+    auto,
+    auto,
+    52px 52px,
+    52px 52px,
+    auto;
+}
+
+.circuitbard-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 28px,
+      rgba(255, 244, 214, 0.025) 29px,
+      transparent 30px
+    ),
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(244, 63, 94, 0.035) 45%,
+      transparent 70%
+    );
+  opacity: 0.38;
+  mask-image: radial-gradient(circle at center, black, transparent 82%);
+}
