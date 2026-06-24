@@ -25,6 +25,8 @@ const offerings = [
   "Simple web tools",
 ];
 
+const contactEmail = "circuitbardlabs@outlook.com"
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
@@ -209,11 +211,13 @@ export default function Home() {
           </p>
 
           <a
-            href="mailto:circuitbardlabs@gmail.com"
-            className="mt-8 inline-block rounded-full bg-cyan-300 px-6 py-3 font-bold text-slate-950 transition hover:bg-cyan-200"
-          >
-            Email Circuitbard Labs
-          </a>
+  href={`mailto:${contactEmail}`}
+  className="mt-8 inline-block rounded-full bg-cyan-300 px-6 py-3 font-bold text-slate-950 transition hover:bg-cyan-200"
+>
+  Email Circuitbard Labs
+</a>
+
+<p className="mt-4 text-sm text-slate-400">{contactEmail}</p>
         </div>
       </section>
 
