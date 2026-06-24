@@ -39,6 +39,11 @@ export const metadata: Metadata = {
     description:
       "Useful websites, homebrewed apps, and lightweight digital systems built to keep the little things from piling up.",
   },
+    icons: {
+    icon: "/circuitbard-icon.svg",
+    shortcut: "/circuitbard-icon.svg",
+    apple: "/circuitbard-icon.svg",
+  },
 };
 
 export default function RootLayout({
