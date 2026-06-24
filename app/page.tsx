@@ -29,8 +29,7 @@ const contactEmail = "circuitbardlabs@outlook.com"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100">
-      <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-8">
+    <main className="min-h-screen overflow-x-hidden bg-slate-950 text-slate-100">      <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-8">
         <nav className="flex items-center justify-between">
           <div className="text-lg font-bold tracking-tight">
             Circuitbard Labs
@@ -58,8 +57,8 @@ export default function Home() {
               Websites • Apps • Digital Systems
             </p>
 
-            <h1 className="max-w-4xl text-5xl font-black tracking-tight text-white md:text-7xl">
-              Practical digital tools for everyday chaos.
+            <h1 className="max-w-4xl break-words text-4xl font-black tracking-tight text-white sm:text-5xl md:text-7xl">
+                Practical digital tools for everyday chaos.
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
@@ -71,14 +70,14 @@ export default function Home() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#projects"
-                className="rounded-full bg-cyan-300 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-cyan-200"
+                className="w-full rounded-full bg-cyan-300 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-cyan-200 sm:w-auto"
               >
                 View Projects
               </a>
 
               <a
                 href="#contact"
-                className="rounded-full border border-slate-600 px-6 py-3 text-center font-bold text-white transition hover:border-cyan-300 hover:text-cyan-300"
+                className="w-full rounded-full border border-slate-600 px-6 py-3 text-center font-bold text-white transition hover:border-cyan-300 hover:text-cyan-300 sm:w-auto"
               >
                 Work With Me
               </a>
@@ -89,7 +88,7 @@ export default function Home() {
             <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
               Project 001
             </p>
-            <h2 className="mt-4 text-3xl font-black text-white">
+            <h2 className="text-3xl font-black text-white sm:text-4xl">
               Circuitbard Labs Website
             </h2>
             <p className="mt-4 leading-7 text-slate-300">
@@ -108,7 +107,7 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
             What I Build
           </p>
-          <h2 className="mt-4 text-4xl font-black text-white">
+          <h2 className="text-3xl font-black text-white sm:text-4xl">
             Useful tech without the corporate nonsense.
           </h2>
 
@@ -136,7 +135,7 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
               Featured Project
             </p>
-            <h2 className="mt-4 text-4xl font-black text-white">
+            <h2 className="text-3xl font-black text-white sm:text-4xl">
               FollowUp Agent
             </h2>
           </div>
@@ -163,7 +162,7 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
             Services
           </p>
-          <h2 className="mt-4 text-4xl font-black text-white">
+          <h2 className="text-3xl font-black text-white sm:text-4xl">
             Starter builds for real-world needs.
           </h2>
 
@@ -185,7 +184,7 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
             About
           </p>
-          <h2 className="mt-4 text-4xl font-black text-white">
+          <h2 className="text-3xl font-black text-white sm:text-4xl">
             Built by an independent maker with a practical streak.
           </h2>
           <p className="mt-6 leading-8 text-slate-300">
@@ -202,7 +201,7 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
             Contact
           </p>
-          <h2 className="mt-4 text-4xl font-black text-white">
+          <h2 className="text-3xl font-black text-white sm:text-4xl">
             Need a site, app, or simple digital setup?
           </h2>
           <p className="mt-6 leading-8 text-slate-300">
