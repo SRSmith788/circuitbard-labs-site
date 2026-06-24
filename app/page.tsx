@@ -29,7 +29,8 @@ const contactEmail = "circuitbardlabs@outlook.com"
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-slate-950 text-slate-100">      <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-8">
+    <main className="min-h-screen overflow-x-hidden bg-slate-950 text-slate-100">     
+     <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-6 sm:px-6 sm:py-8">
         <nav className="flex items-center justify-between">
           <div className="text-lg font-bold tracking-tight">
             Circuitbard Labs
@@ -51,23 +52,23 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="grid flex-1 items-center gap-12 py-20 md:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid flex-1 items-center gap-8 py-12 sm:py-16 md:grid-cols-[1.2fr_0.8fr] md:gap-12 md:py-20">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300 sm:text-sm sm:tracking-[0.3em]">
               Websites • Apps • Digital Systems
             </p>
 
-            <h1 className="max-w-4xl break-words text-4xl font-black tracking-tight text-white sm:text-5xl md:text-7xl">
-                Practical digital tools for everyday chaos.
+            <h1 className="max-w-4xl text-3xl font-black leading-tight tracking-tight text-white sm:text-5xl md:text-7xl">
+                 Practical digital tools for everyday chaos.
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+            <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
               Circuitbard Labs builds useful websites, homebrewed apps, and
               lightweight digital systems that keep the little things from
               piling up.
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
               <a
                 href="#projects"
                 className="w-full rounded-full bg-cyan-300 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-cyan-200 sm:w-auto"
@@ -84,8 +85,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-2xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
+<div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-5 shadow-2xl sm:p-6">            <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
               Project 001
             </p>
             <h2 className="text-3xl font-black text-white sm:text-4xl">
