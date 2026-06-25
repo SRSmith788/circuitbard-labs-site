@@ -41,9 +41,14 @@ export default function Home() {
     <main className="circuitbard-bg min-h-screen overflow-x-hidden text-stone-100">
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-6 sm:px-6 sm:py-8">
         <nav className="flex items-center justify-between">
-          <a href="#" className="text-lg font-bold tracking-tight text-white">
-            Circuitbard Labs
-          </a>
+        <a href="#" className="flex items-center gap-4 text-lg font-bold tracking-tight text-white">
+        <img
+         src="/circuitbard-logo.jpg"
+         alt="Circuitbard Labs logo"
+        className="h-16 w-auto rounded-sm"        
+        />
+        <span>Circuitbard Labs</span>
+        </a>
 
           <div className="hidden gap-6 text-sm text-stone-300 md:flex">
             <a href="#services" className="transition hover:text-rose-400">
