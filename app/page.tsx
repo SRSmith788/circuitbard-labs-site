@@ -1,6 +1,4 @@
-const contactEmail = "circuitbardlabs@outlook.com";
-
-const primaryServices = [
+const services = [
   {
     title: "Small Business Websites",
     description:
@@ -14,17 +12,17 @@ const primaryServices = [
   {
     title: "Digital Setup Help",
     description:
-      "Practical help with forms, contact paths, simple workflows, links, and lightweight online systems that make a business easier to manage.",
+      "Forms, basic workflows, simple systems, and lightweight web tools that help keep the little things from piling up.",
   },
 ];
 
 const offerings = [
-  "One-page business websites",
-  "Mobile-friendly landing pages",
+  "One-page business sites",
+  "Landing pages",
   "Basic ecommerce setup",
-  "Contact and inquiry forms",
-  "Portfolio and project pages",
-  "Simple web tools and workflows",
+  "Contact forms",
+  "Portfolio pages",
+  "Simple web tools",
 ];
 
 const projectHighlights = [
@@ -36,19 +34,24 @@ const projectHighlights = [
   "Desktop and phone testing",
 ];
 
+const contactEmail = "circuitbardlabs@outlook.com";
+
 export default function Home() {
   return (
     <main className="circuitbard-bg min-h-screen overflow-x-hidden text-stone-100">
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-6 sm:px-6 sm:py-8">
         <nav className="flex items-center justify-between">
-        <a href="#" className="flex items-center gap-4 text-lg font-bold tracking-tight text-white">
-        <img
-         src="/circuitbard-logo.jpg"
-         alt="Circuitbard Labs logo"
-        className="h-16 w-auto rounded-sm"        
-        />
-        <span>Circuitbard Labs</span>
-        </a>
+          <a
+            href="#"
+            className="flex items-center gap-4 text-lg font-bold tracking-tight text-white"
+          >
+            <img
+              src="/circuitbard-logo.jpg"
+              alt="Circuitbard Labs logo"
+              className="h-12 w-auto rounded-sm sm:h-16"
+            />
+            <span>Circuitbard Labs</span>
+          </a>
 
           <div className="hidden gap-6 text-sm text-stone-300 md:flex">
             <a href="#services" className="transition hover:text-rose-400">
@@ -85,7 +88,7 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
               <a
                 href="#projects"
-                className="w-full rounded-full bg-rose-500 px-6 py-3 text-center font-bold text-white transition hover:bg-rose-400 sm:w-auto"
+                className="w-full rounded-full bg-rose-500 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-rose-400 sm:w-auto"
               >
                 View Projects
               </a>
@@ -100,10 +103,10 @@ export default function Home() {
           </div>
 
           <div className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-5 shadow-2xl sm:p-6">
-            <p className="text-sm uppercase tracking-[0.25em] text-stone-400">
+            <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
               Project 001
             </p>
-            <h2 className="mt-4 text-3xl font-black text-white">
+            <h2 className="text-3xl font-black text-white sm:text-4xl">
               Circuitbard Labs Website
             </h2>
             <p className="mt-4 leading-7 text-stone-300">
@@ -112,8 +115,8 @@ export default function Home() {
               prepare the way for future client work.
             </p>
             <p className="mt-6 rounded-2xl bg-black/40 p-4 text-sm text-stone-400">
-              Built with a maker&apos;s hands, a storyteller&apos;s eye, and a
-              lute kept nearby for scope creep.
+              Built with a maker’s hands, a storyteller’s eye, and a lute kept
+              nearby for scope creep.
             </p>
           </div>
         </div>
@@ -128,14 +131,14 @@ export default function Home() {
             Useful websites and systems without the corporate maze.
           </h2>
 
-          <p className="mt-5 max-w-3xl leading-8 text-stone-300">
+          <p className="mt-6 max-w-4xl leading-8 text-stone-300">
             Circuitbard Labs focuses on practical builds: sites, pages, and
             small digital systems that help people explain what they do, collect
             inquiries, organize next steps, and look more professional online.
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {primaryServices.map((service) => (
+            {services.map((service) => (
               <article
                 key={service.title}
                 className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6"
@@ -147,28 +150,6 @@ export default function Home() {
                   {service.description}
                 </p>
               </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-rose-950/70 px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
-            What I Can Build
-          </p>
-          <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
-            Starter builds for real-world needs.
-          </h2>
-
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {offerings.map((offering) => (
-              <div
-                key={offering}
-                className="rounded-2xl border border-rose-950/70 bg-zinc-950/70 px-5 py-4 font-semibold text-stone-200"
-              >
-                {offering}
-              </div>
             ))}
           </div>
         </div>
@@ -187,15 +168,14 @@ export default function Home() {
 
           <div>
             <p className="leading-8 text-stone-300">
-              FollowUp Agent is a simple follow-up tracker for reminders,
-              conversations, loose ends, and important next steps. It is built
-              for people who need a practical way to remember what needs
-              attention next without turning task tracking into another job.
+              FollowUp Agent is a simple tracker for reminders, conversations,
+              loose ends, and important next steps. It is built for people who
+              need a practical way to remember what needs attention next.
             </p>
 
             <a
               href="#contact"
-              className="mt-8 inline-block rounded-full border border-rose-950/70 px-6 py-3 font-bold text-white transition hover:border-rose-400 hover:text-rose-400"
+              className="mt-8 inline-block rounded-full border border-slate-600 px-6 py-3 font-bold text-white transition hover:border-rose-400 hover:text-rose-400"
             >
               Ask About This Project
             </a>
@@ -206,34 +186,95 @@ export default function Home() {
       <section className="border-t border-rose-950/70 px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
-            Project 001 Case Note
+            Starter Services
           </p>
           <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
-            This site is the first proof-of-work build.
+            Starter builds for real-world needs.
           </h2>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6">
-              <h3 className="text-xl font-bold text-white">
-                Circuitbard Labs Website
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {offerings.map((offering) => (
+              <div
+                key={offering}
+                className="rounded-2xl border border-rose-950/70 bg-zinc-950/70 px-5 py-4 font-semibold text-stone-200"
+              >
+                {offering}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-rose-950/70 px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
+            Project 001 Case Note
+          </p>
+
+          <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
+            The first proof-of-work build for Circuitbard Labs.
+          </h2>
+
+          <p className="mt-5 max-w-3xl leading-8 text-stone-300">
+            This site was built as the first public home for Circuitbard Labs: a
+            place to introduce the brand, explain what the lab builds, show
+            current projects, and create a clear path for future client
+            conversations.
+          </p>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            <article className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">
+                Goal
+              </p>
+              <h3 className="mt-4 text-xl font-bold text-white">
+                Create a real web presence.
               </h3>
               <p className="mt-4 leading-7 text-stone-300">
-                A responsive one-page business website built to establish the
-                Circuitbard Labs brand, explain available services, feature
-                current projects, and create a clear contact path.
+                Circuitbard Labs needed a clean landing page that could act as a
+                business card, portfolio starter, and foundation for future
+                services.
               </p>
-            </div>
+            </article>
 
-            <div className="grid gap-4 sm:grid-cols-2">
-              {projectHighlights.map((highlight) => (
-                <div
-                  key={highlight}
-                  className="rounded-2xl border border-rose-950/70 bg-zinc-950/70 px-5 py-4 text-sm font-semibold text-stone-200"
-                >
-                  {highlight}
-                </div>
-              ))}
-            </div>
+            <article className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">
+                Build
+              </p>
+              <h3 className="mt-4 text-xl font-bold text-white">
+                Design, code, test, deploy.
+              </h3>
+              <p className="mt-4 leading-7 text-stone-300">
+                The site was built as a responsive one-page website with custom
+                brand styling, mobile testing, GitHub version control, and
+                Vercel deployment.
+              </p>
+            </article>
+
+            <article className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">
+                Result
+              </p>
+              <h3 className="mt-4 text-xl font-bold text-white">
+                A live foundation for the lab.
+              </h3>
+              <p className="mt-4 leading-7 text-stone-300">
+                The result is a public site that introduces the brand, showcases
+                practical services, highlights FollowUp Agent, and gives
+                visitors a simple way to make contact.
+              </p>
+            </article>
+          </div>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {projectHighlights.map((highlight) => (
+              <div
+                key={highlight}
+                className="rounded-2xl border border-rose-950/70 bg-zinc-950/70 px-5 py-4 text-sm font-semibold text-stone-200"
+              >
+                {highlight}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -247,10 +288,10 @@ export default function Home() {
             Built by an independent maker with a practical streak.
           </h2>
           <p className="mt-6 leading-8 text-stone-300">
-            Circuitbard Labs is an independent web and app studio focused on
-            practical tools, clear communication, and useful digital systems.
-            The goal is simple: build things that help people manage the small
-            stuff before it becomes a mountain.
+            Circuitbard Labs is a small independent tech lab focused on building
+            useful, lightweight digital tools. The goal is simple: make things
+            that help people manage the little stuff before it becomes a
+            mountain.
           </p>
         </div>
       </section>
@@ -261,16 +302,16 @@ export default function Home() {
             Contact
           </p>
           <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
-            Need a site, landing page, or simple digital setup?
+            Need a site, app, or simple digital setup?
           </h2>
           <p className="mt-6 leading-8 text-stone-300">
-            Reach out and let&apos;s talk through what you need, what you
-            already have, and what kind of build would actually help.
+            Reach out and let’s talk through what you need. Lute currently
+            reserved for scope creep.
           </p>
 
           <a
             href={`mailto:${contactEmail}`}
-            className="mt-8 inline-block rounded-full bg-rose-500 px-6 py-3 font-bold text-white transition hover:bg-rose-400"
+            className="mt-8 inline-block rounded-full bg-rose-500 px-6 py-3 font-bold text-slate-950 transition hover:bg-rose-400"
           >
             Email Circuitbard Labs
           </a>
@@ -279,7 +320,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-rose-950/70 px-6 py-8 text-center text-sm text-stone-500">
+      <footer className="border-t border-rose-950/70 px-6 py-8 text-center text-sm text-slate-500">
         Built by Circuitbard Labs. No wizard bones required. Lute nearby just in
         case.
       </footer>

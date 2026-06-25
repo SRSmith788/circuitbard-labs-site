@@ -15,35 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Circuitbard Labs | Practical Digital Tools",
   description:
-    "Circuitbard Labs builds useful websites, homebrewed apps, and lightweight digital systems for everyday chaos.",
-  keywords: [
-    "Circuitbard Labs",
-    "web design",
-    "small business websites",
-    "homebrewed apps",
-    "digital tools",
-    "FollowUp Agent",
-  ],
-  authors: [{ name: "Circuitbard Labs" }],
-  creator: "Circuitbard Labs",
-  openGraph: {
-    title: "Circuitbard Labs | Practical Digital Tools",
-    description:
-      "Useful websites, homebrewed apps, and lightweight digital systems built to keep the little things from piling up.",
-    siteName: "Circuitbard Labs",
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: "Circuitbard Labs | Practical Digital Tools",
-    description:
-      "Useful websites, homebrewed apps, and lightweight digital systems built to keep the little things from piling up.",
-  },
-    icons: {
-    icon: "/circuitbard-icon.svg",
-    shortcut: "/circuitbard-icon.svg",
-    apple: "/circuitbard-icon.svg",
-  },
+    "Circuitbard Labs builds clean websites, useful web tools, and lightweight digital systems for small businesses, creators, and everyday chaos.",
 };
 
 export default function RootLayout({
