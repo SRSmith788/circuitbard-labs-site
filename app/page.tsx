@@ -65,8 +65,8 @@ export default function Home() {
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-6 sm:px-6 sm:py-8">
         <nav className="flex items-center justify-between">
           <a
-             href="#"
-             className="flex items-center gap-4 font-bold tracking-tight text-white"
+            href="#"
+            className="flex items-center gap-4 font-bold tracking-tight text-white"
           >
             <img
               src="/circuitbard-logo-mark.jpeg"
@@ -138,8 +138,8 @@ export default function Home() {
               prepare the way for future client work.
             </p>
             <p className="mt-6 rounded-2xl bg-black/40 p-4 text-sm text-stone-400">
-              Built with a maker’s hands, a storyteller’s eye, and a lute kept
-              nearby for scope creep.
+              Built with a maker&apos;s hands, a storyteller&apos;s eye, and a
+              practical focus on keeping the scope clear.
             </p>
           </div>
         </div>
@@ -228,7 +228,7 @@ export default function Home() {
         </div>
       </section>
 
-            <section className="border-t border-rose-950/70 px-6 py-20">
+      <section className="border-t border-rose-950/70 px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
             How I Work
@@ -241,8 +241,8 @@ export default function Home() {
           <p className="mt-6 max-w-4xl leading-8 text-stone-300">
             Circuitbard Labs keeps projects focused by turning loose ideas into
             clear first versions. The goal is to build something useful,
-            testable, and ready to grow without letting the scope turn into a
-            many-headed goblin hydra.
+            testable, and ready to grow without letting the scope get tangled or
+            oversized.
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-4">
@@ -368,8 +368,8 @@ export default function Home() {
             Need a site, app, or simple digital setup?
           </h2>
           <p className="mt-6 leading-8 text-stone-300">
-            Reach out and let’s talk through what you need. Lute currently
-            reserved for scope creep.
+            Reach out and let&apos;s talk through what you need. We&apos;ll keep
+            the scope clear and the next step practical.
           </p>
 
           <a
@@ -384,8 +384,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-rose-950/70 px-6 py-8 text-center text-sm text-slate-500">
-        Built by Circuitbard Labs. No wizard bones required. Lute nearby just in
-        case.
+        Built by Circuitbard Labs. Practical digital tools for everyday chaos.
       </footer>
     </main>
   );
