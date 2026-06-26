@@ -34,6 +34,29 @@ const projectHighlights = [
   "Desktop and phone testing",
 ];
 
+const workSteps = [
+  {
+    title: "Listen",
+    description:
+      "We start with what you need, what you already have, and what the site or tool needs to accomplish.",
+  },
+  {
+    title: "Plan",
+    description:
+      "The work gets shaped into a realistic first version so the project stays clear, useful, and finishable.",
+  },
+  {
+    title: "Build",
+    description:
+      "I design, code, test, and adjust the site or tool with desktop and mobile use in mind.",
+  },
+  {
+    title: "Launch",
+    description:
+      "The finished version gets deployed, checked, and prepared so you have a working public link.",
+  },
+];
+
 const contactEmail = "circuitbardlabs@outlook.com";
 
 export default function Home() {
@@ -200,6 +223,46 @@ export default function Home() {
               >
                 {offering}
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+            <section className="border-t border-rose-950/70 px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
+            How I Work
+          </p>
+
+          <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
+            Clear steps. Practical builds. No mystery maze.
+          </h2>
+
+          <p className="mt-6 max-w-4xl leading-8 text-stone-300">
+            Circuitbard Labs keeps projects focused by turning loose ideas into
+            clear first versions. The goal is to build something useful,
+            testable, and ready to grow without letting the scope turn into a
+            many-headed goblin hydra.
+          </p>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-4">
+            {workSteps.map((step, index) => (
+              <article
+                key={step.title}
+                className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6"
+              >
+                <p className="text-sm font-bold text-rose-400">
+                  Step {index + 1}
+                </p>
+
+                <h3 className="mt-3 text-xl font-bold text-white">
+                  {step.title}
+                </h3>
+
+                <p className="mt-4 leading-7 text-stone-300">
+                  {step.description}
+                </p>
+              </article>
             ))}
           </div>
         </div>
