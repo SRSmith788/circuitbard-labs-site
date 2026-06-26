@@ -42,15 +42,15 @@ export default function Home() {
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-6 sm:px-6 sm:py-8">
         <nav className="flex items-center justify-between">
           <a
-            href="#"
-            className="flex items-center gap-4 text-lg font-bold tracking-tight text-white"
+             href="#"
+             className="flex items-center gap-4 font-bold tracking-tight text-white"
           >
             <img
-              src="/circuitbard-logo.jpg"
+              src="/circuitbard-logo-mark.jpeg"
               alt="Circuitbard Labs logo"
-              className="h-12 w-auto rounded-sm sm:h-16"
+              className="h-12 w-auto rounded-full sm:h-16 md:h-20"
             />
-            <span>Circuitbard Labs</span>
+            <span className="text-lg md:text-2xl">Circuitbard Labs</span>
           </a>
 
           <div className="hidden gap-6 text-sm text-stone-300 md:flex">
