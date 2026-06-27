@@ -77,16 +77,16 @@ export default function Home() {
           </a>
 
           <div className="hidden gap-6 text-sm text-stone-300 md:flex">
-            <a href="#services" className="transition hover:text-rose-400">
+            <a href="#services" className="transition hover:text-red-400">
               Services
             </a>
-            <a href="#projects" className="transition hover:text-rose-400">
+            <a href="#projects" className="transition hover:text-red-400">
               Projects
             </a>
-            <a href="#about" className="transition hover:text-rose-400">
+            <a href="#about" className="transition hover:text-red-400">
               About
             </a>
-            <a href="#contact" className="transition hover:text-rose-400">
+            <a href="#contact" className="transition hover:text-red-400">
               Contact
             </a>
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
 
         <div className="grid flex-1 items-center gap-8 py-12 sm:py-16 md:grid-cols-[1.2fr_0.8fr] md:gap-12 md:py-20">
           <div>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-rose-400 sm:text-sm sm:tracking-[0.3em]">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-red-400 sm:text-sm sm:tracking-[0.3em]">
               Websites • Apps • Digital Systems
             </p>
 
@@ -111,21 +111,21 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
               <a
                 href="#projects"
-                className="w-full rounded-full bg-rose-500 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-rose-400 sm:w-auto"
+                className="w-full rounded-full bg-red-700 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-red-600 sm:w-auto"
               >
                 View Projects
               </a>
 
               <a
                 href="#contact"
-                className="w-full rounded-full border border-rose-950/70 px-6 py-3 text-center font-bold text-white transition hover:border-rose-400 hover:text-rose-400 sm:w-auto"
+                className="w-full rounded-full border border-red-950/80 px-6 py-3 text-center font-bold text-white transition hover:border-red-500 hover:text-red-400 sm:w-auto"
               >
                 Work With Me
               </a>
             </div>
           </div>
 
-          <div className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-5 shadow-2xl sm:p-6">
+          <div className="rounded-3xl border border-red-950/80 bg-zinc-950/70 p-5 shadow-2xl sm:p-6">
             <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
               Project 001
             </p>
@@ -145,9 +145,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="border-t border-rose-950/70 px-6 py-20">
+      <section id="services" className="border-t border-red-950/80 px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
             Services
           </p>
           <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
@@ -164,7 +164,7 @@ export default function Home() {
             {services.map((service) => (
               <article
                 key={service.title}
-                className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6"
+                className="rounded-3xl border border-red-950/80 bg-zinc-950/70 p-6"
               >
                 <h3 className="text-xl font-bold text-white">
                   {service.title}
@@ -178,10 +178,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="border-t border-rose-950/70 px-6 py-20">
+      <section id="projects" className="border-t border-red-950/80 px-6 py-20">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
               Featured Project
             </p>
             <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
@@ -201,14 +201,14 @@ export default function Home() {
                 href="https://app.followupagentapp.com/?utm_source=circuitbard_labs&utm_medium=website&utm_campaign=followup_agent_trial"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-full bg-rose-500 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-rose-400"
+                className="inline-block rounded-full bg-red-700 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-red-600"
               >
                 Start Your 3-Day Trial
               </a>
 
               <a
                 href="#contact"
-                className="inline-block rounded-full border border-slate-600 px-6 py-3 text-center font-bold text-white transition hover:border-rose-400 hover:text-rose-400"
+                className="inline-block rounded-full border border-slate-600 px-6 py-3 text-center font-bold text-white transition hover:border-red-500 hover:text-red-400"
               >
                 Ask About This Project
               </a>
@@ -217,9 +217,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-rose-950/70 px-6 py-20">
+      <section className="border-t border-red-950/80 px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
             Starter Services
           </p>
           <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
@@ -230,7 +230,7 @@ export default function Home() {
             {offerings.map((offering) => (
               <div
                 key={offering}
-                className="rounded-2xl border border-rose-950/70 bg-zinc-950/70 px-5 py-4 font-semibold text-stone-200"
+                className="rounded-2xl border border-red-950/80 bg-zinc-950/70 px-5 py-4 font-semibold text-stone-200"
               >
                 {offering}
               </div>
@@ -239,9 +239,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-rose-950/70 px-6 py-20">
+      <section className="border-t border-red-950/80 px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
             How I Work
           </p>
 
@@ -260,9 +260,9 @@ export default function Home() {
             {workSteps.map((step, index) => (
               <article
                 key={step.title}
-                className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6"
+                className="rounded-3xl border border-red-950/80 bg-zinc-950/70 p-6"
               >
-                <p className="text-sm font-bold text-rose-400">
+                <p className="text-sm font-bold text-red-400">
                   Step {index + 1}
                 </p>
 
@@ -279,9 +279,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-rose-950/70 px-6 py-20">
+      <section className="border-t border-red-950/80 px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
             Project 001 Case Note
           </p>
 
@@ -297,8 +297,8 @@ export default function Home() {
           </p>
 
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            <article className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">
+            <article className="rounded-3xl border border-red-950/80 bg-zinc-950/70 p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-400">
                 Goal
               </p>
               <h3 className="mt-4 text-xl font-bold text-white">
@@ -311,8 +311,8 @@ export default function Home() {
               </p>
             </article>
 
-            <article className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">
+            <article className="rounded-3xl border border-red-950/80 bg-zinc-950/70 p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-400">
                 Build
               </p>
               <h3 className="mt-4 text-xl font-bold text-white">
@@ -325,8 +325,8 @@ export default function Home() {
               </p>
             </article>
 
-            <article className="rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">
+            <article className="rounded-3xl border border-red-950/80 bg-zinc-950/70 p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-400">
                 Result
               </p>
               <h3 className="mt-4 text-xl font-bold text-white">
@@ -344,7 +344,7 @@ export default function Home() {
             {projectHighlights.map((highlight) => (
               <div
                 key={highlight}
-                className="rounded-2xl border border-rose-950/70 bg-zinc-950/70 px-5 py-4 text-sm font-semibold text-stone-200"
+                className="rounded-2xl border border-red-950/80 bg-zinc-950/70 px-5 py-4 text-sm font-semibold text-stone-200"
               >
                 {highlight}
               </div>
@@ -353,9 +353,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="border-t border-rose-950/70 px-6 py-20">
+      <section id="about" className="border-t border-red-950/80 px-6 py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
             About
           </p>
           <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
@@ -370,9 +370,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="border-t border-rose-950/70 px-6 py-20">
-        <div className="mx-auto max-w-3xl rounded-3xl border border-rose-950/70 bg-zinc-950/70 p-8 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-400">
+      <section id="contact" className="border-t border-red-950/80 px-6 py-20">
+        <div className="mx-auto max-w-3xl rounded-3xl border border-red-950/80 bg-zinc-950/70 p-8 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
             Contact
           </p>
           <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
@@ -385,7 +385,7 @@ export default function Home() {
 
           <a
             href={`mailto:${contactEmail}`}
-            className="mt-8 inline-block rounded-full bg-rose-500 px-6 py-3 font-bold text-slate-950 transition hover:bg-rose-400"
+            className="mt-8 inline-block rounded-full bg-red-700 px-6 py-3 font-bold text-slate-950 transition hover:bg-red-600"
           >
             Email Circuitbard Labs
           </a>
@@ -394,7 +394,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-rose-950/70 px-6 py-8 text-center text-sm text-slate-500">
+      <footer className="border-t border-red-950/80 px-6 py-8 text-center text-sm text-slate-500">
         Built by Circuitbard Labs. Practical digital tools for everyday chaos.
       </footer>
     </main>
