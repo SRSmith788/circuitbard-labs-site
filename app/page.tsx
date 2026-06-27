@@ -196,12 +196,23 @@ export default function Home() {
               need a practical way to remember what needs attention next.
             </p>
 
-            <a
-              href="#contact"
-              className="mt-8 inline-block rounded-full border border-slate-600 px-6 py-3 font-bold text-white transition hover:border-rose-400 hover:text-rose-400"
-            >
-              Ask About This Project
-            </a>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="https://app.followupagentapp.com/?utm_source=circuitbard_labs&utm_medium=website&utm_campaign=followup_agent_trial"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-full bg-rose-500 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-rose-400"
+              >
+                Start Your 3-Day Trial
+              </a>
+
+              <a
+                href="#contact"
+                className="inline-block rounded-full border border-slate-600 px-6 py-3 text-center font-bold text-white transition hover:border-rose-400 hover:text-rose-400"
+              >
+                Ask About This Project
+              </a>
+            </div>
           </div>
         </div>
       </section>
