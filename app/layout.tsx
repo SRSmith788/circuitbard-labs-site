@@ -13,9 +13,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Circuitbard Labs | Practical Digital Tools",
+  title: "Circuitbard Labs — Practical Web Tools & Small Business Sites",
   description:
-    "Circuitbard Labs builds clean websites, useful web tools, and lightweight digital systems for small businesses, creators, and everyday chaos.",
+    "Circuitbard Labs builds practical web tools, lightweight apps, and clean small-business websites for people who need useful things shipped without the bloat.",
+  icons: {
+    icon: "/circuitbard-icon.svg",
+    apple: "/circuitbard-icon.svg",
+  },
+  openGraph: {
+    title: "Circuitbard Labs",
+    description:
+      "Practical web tools, lightweight apps, and clean small-business websites built with focus, clarity, and a little bardic stubbornness.",
+    images: [
+      {
+        url: "/circuitbard-logo.jpg",
+        width: 1254,
+        height: 1254,
+        alt: "Circuitbard Labs logo",
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Circuitbard Labs",
+    description:
+      "Practical web tools, lightweight apps, and clean small-business websites built with focus, clarity, and a little bardic stubbornness.",
+    images: ["/circuitbard-logo.jpg"],
+  },
 };
 
 export default function RootLayout({
